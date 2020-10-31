@@ -1,0 +1,79 @@
+
+
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="Fincale/calculators/EMI/styles.css">
+</head>
+<body> 
+    <script src="Fincale/calculators/EMI/emi.js"></script>
+    <div class="container cal-container">
+        <div class="row">
+            <div class="col-md-6 leftbox">
+                <h1>Personal Loan EMI Calculators</h1> 
+           <p class="input-form">Total Amount of Loan:</p><input id="loan" class="input-box" type="text" name="loan" value="" onchange="myfun()" onkeypress="return isNumber(event)" required/>
+           
+           <p  class="input-form" >Total intrest:</p><input id="roi" class="input-box" type="text" name="roi" value="" onchange="myfun()" required/> 
+           <p  class="input-form">Terms (years):</p> <input  id="term" class="input-box" type="text" name="term" value="" onchange="myfun()" onkeypress="return isNumber(event)" required/>
+
+                
+            </div>
+            <div class="col-md-6 rightbox">
+                <div class="box-logo">
+                    <img src="r1.jpg" alt=""/>
+                </div>
+                <span class="right-title">Equated Monthly Installments (EMI) <br>
+                </span>
+                <span id="emi" class="amount">1000</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container cal-container">
+        <div class="row">
+            <div class="col-md-12 login-form-1">
+                <br>
+                <h2 >Frequently Asked Questions</h2>
+                <br>
+                <ul>
+                    <li>What is an EMI?</li>
+                    <br>
+                    <p>The Equated Monthly Instalment (or EMI) consists of the principal portion of the loan amount and the interest. Therefore, EMI = principal amount + interest paid on the personal loan. The EMI, usually, remains fixed for the entire tenure of your loan, and it is to be repaid over the tenure of the loan on a monthly basis.
+                       <br>
+                        Mathematically, EMI is calculated as under:
+                        <br>
+                        P x R x (1+R)^N / [(1+R)^N-1]
+                        <br>
+                        P = Principal amount of the loan
+                        <br>
+                        R = Rate of interest
+                        <br>
+                        N = Number of monthly instalments.
+                        <br>
+                        So, say you are applying for a personal loan, amounting to Rs 2,00,000 at a rate of interest of 15.5% p.a. and your loan tenure is 2 years, your EMI will be calculated as under:
+                        <br>
+                        EMI = 200000* 0.0129 * (1+ 0.0129)^24 = Rs 9,745 / [(1+ 0.0129)^24 ]-1
+                        <br>
+                        The rate of interest (R) on your loan is calculated monthly i.e. (R= Annual rate of interest/12/100). For instance, if R = 15.5% per annum, then R= 15.5/12/100 = 0.0129.
+                        <br>
+                       
+                      
+                    
+        
+                </ul>
+                
+            </div>
+           
+        </div>
+    </div>
+    
+</body>
+</html>

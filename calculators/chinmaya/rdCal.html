@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <title>RD Calculator</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="rd.js"></script>
+        <link rel="stylesheet" href="backbtn.css">
+
+
+
+    <link href="rd.css" rel="stylesheet">
+  </head>
+<!--  <button onclick="location.href='Hpage.html'" type="button" class="btn1 btn1-6 btn1-6c" style="margin-bottom:550px">Back</button>
+ -->  <body>
+  
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column" >
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand" style="color: black">Fincal</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" style="color: black">Reccuring Deposit Calculator</a>
+
+          </nav>
+        </div>
+      </header>
+
+<br><br><br>
+      <div align="justify-content-center" id=outer ><p style="color: black">Recurring Deposit Calculator <br></p>
+
+        <div id=cover>
+          <form><table class=main>
+
+            <tr><td style="color: black">Monthly deposit<td><input id=principal>
+            <tr><td style="color: black">Interest Rate<td><input id=rate>
+            <tr><td style="color: black">Interest Compounding<td><select id=ci><option value=12>Monthly<option value=4 selected>Quarterly<option value=2>Half Yearly<option value=1>Yearly</select>
+            <tr><td style="color: black">Period (months)<td><input id=time><tr><td><button type=reset>Reset</button>
+            <td><button type=button onclick=rdmaturity();>Submit</button>
+            <tr><td style="color: black"><b>Maturity Value</b><td><input id=mv>
+            </table>
+          </form>
+         </div>
+        </div>
+
+<br><br><br><br> 
+
+    
+<h3 style="color: black">FAQ</h3>
+        <p style="color: black">Where can I find the option to regularize RD on Net banking? <br>
+RD Regularize option is available under the Service Request tab on net banking <br><br>
+
+Is there any option for customer to select SI date for the period? <br>
+No, the SI will hit the account every month on the date of 1st installment debit. <br><br>
+
+If Recurring Deposit is booked today, when will the next SI hit the account? <br>
+SI will hit the same date every month. <br><br>
+
+Is PAN mandatory to book Recurring Deposit? <br>
+Yes, PAN is mandatory to book RD, else TDS will apply as per IT Rules. <br><br>
+
+Is an overdraft facility allowed? <br>
+Currently there is no overdraft facility on Recurring Deposits. <br><br>
+
+Can I close my Recurring Deposit online? <br>
+Yes, you can close your Recurring Deposit Online. <br><br>
+
+Is there a monthly or quarterly interest pay-out option? <br>
+No. The interest will be paid on maturity or on premature closure of the Recurring Deposit. <br><br>
+
+What will be the delayed penalty charge if I delay the installment? <br>
+If the customer delays the installment beyond the stipulated due date + grace period of 5 days, penal interest for the entire month will be levied. <br><br>
+
+What is the premature withdrawal penalty in Recurring Deposit? <br>
+On premature withdrawal of Recurring Deposit, the interest will be paid at the lower of rate prevailing on the date of deposit for the tenure the deposit remained with the bank or at the contracted rate. <br><br>
+
+
+</p>
+
+    </div>
+
+
+
+  
+
+</body></html>

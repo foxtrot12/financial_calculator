@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <title>LIC calculator</title>
+  </head>
+  <body>
+<script src="./sip.js"></script>
+    <div class="container mt-5 p-5 bg-light shadow-sm rounded">
+        <div class="row">
+          <div class="col-sm">
+            <p class="text-center font-weight-bolder text-primary h3">LIC calculator</p>
+            <div class="input-group input-group-default">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Sum Assured</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Enter total amount" id="sum" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                <div class="input-group-append">
+                    <span class="input-group-text">&#x20B9;</span>
+                  </div>
+              </div><br>
+              <div class="input-group input-group-default" data-toggle="tooltip" data-placement="top" title="Bonus per 1000, check on LIC site">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Bonus per 1000</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Enter bonus rate Ex :- 48" id="bonus" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                <div class="input-group-append">
+                    <span class="input-group-text" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">%</span>
+                  </div>
+                  <div class="collapse" id="collapseExample1">
+                  <div class="card card-body">
+                   <img src="./Bonus Chart New Plans 2019.jpg" alt="Italian Trulli">
+                  </div>
+                </div>
+              </div><br>
+              <div class="input-group input-group-default">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Term</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Enter total year" id="term" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                <div class="input-group-append">
+                    <span class="input-group-text">Years</span>
+                  </div>
+              </div><br>
+              <div class="input-group input-group-default"  data-toggle="tooltip" data-placement="top" title="FAB rate per 1000, or click on icon %">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">FAB rate</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Enter FAB rate" id="fab" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                <div class="input-group-append">
+                    <span class="input-group-text" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">%</span>
+                  </div>
+                  <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                   <img src="./Final Addition Bonus Rates 2019.jpg" alt="Italian Trulli">
+                  </div>
+                </div>
+              </div>
+              <br>
+              <button onclick="calculate1()" type="button" class="btn btn-outline-warning btn-lg btn-block">Check</button>
+          </div>
+          <div class="col-sm mt-3">
+              <p class="text-muted font-weight-bold h3 text-center" id="namees"><u></u></p><br>
+              <p class="font-weight-bold text-success h5" id="answer"></p>
+              <p class="font-weight-bold text-success h5" id="answer2"></p>
+              <p class="font-weight-bold text-success h5" id="answer3"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid bg-light mt-5 p-5">
+        <div class="row">
+          <div class="col-sm">
+            <div class="container text-muted font-weight-normal ">
+                <p class="text-danger h4 font-weight-bold"> 
+                            What Is Life Insurance?</p>
+
+                           <p> Life insurance is a contract that pledges payment of an amount to the person assured </p>
+                            <p>(or his nominee) on the happening of the event insured against.</p>
+
+                            <p>The contract is valid for payment of the insured amount during:</p>
+                           <p> » The date of maturity, or</p>
+                           <p> » Specified dates at periodic intervals, or</p>
+                           <p> » Unfortunate death, if it occurs earlier.</p>
+
+                           <p> Among other things, the contract also provides for the payment of premium periodically to the Corporation by the policyholder. </p>
+                           <p> Life insurance is universally acknowledged to be an institution, which eliminates 'risk', </p>
+                           <p> substituting certainty for uncertainty and comes to the timely aid of the family in the unfortunate event of death of the breadwinner.  </p>
+
+                           <p> By and large, life insurance is civilisation's partial solution to the problems caused by death. </p>
+                           <p> Life insurance, in short, is concerned with two hazards that stand across the life-path of every person:</p>
+
+                           <p> 1.That of dying prematurely leaving a dependent family to fend for itself.</p>
+                           <p> 2.That of living till old age without visible means of support.</p>
+
+                            
+                              
+                <p class="text-danger h4 font-weight-bold"><u>Who Can Buy A Policy?</u></p>
+
+                     <p> Any person who has attained majority and is eligible to enter into a valid contract </p>
+                     <p> can insure himself/herself and those in whom he/she has insurable interest.</p>
+
+                     <p> Policies can also be taken, subject to certain conditions, on the life of one's spouse or children. </p>
+                     <p> While underwriting proposals, certain factors such as the policyholder’s state of health, </p>
+                     <p> the proponent's income and other relevant factors are considered by the Corporation.</p>
+            </div>
+          </div>
+      </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

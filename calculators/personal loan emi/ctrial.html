@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Car Loan EMI</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="C:/Users/lenovo/Desktop/Fincale/calculators/Car loan/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+
+
+    <div class="outerShell">
+        <H6>EMI Calculator for Car Loans</H6> <br><br>
+
+        <form name="loan-form" onsubmit="return calculator()">
+        <div class='loanBlock'>
+         <h4> <bold>Amount</bold></h4><br>
+         <input type=number id="amount" style="border-radius:5px"><br>
+        </div>
+
+         <div class='aprBlock'>
+         <h4><bold>Annual Percent Rate</bold></h4><br>
+         <input type="number" name="apr" id="apr" style="border-radius:5px"><br>
+         </div>
+          <div class='tenureBlock'>
+         <h4><bold>Duration</bold></h4><br>
+         <input type=number name="tenure" id="tenure" style="border-radius:5px"><br>
+         <br>
+          </div>
+          <div id=buttonBlock>
+        <button style="border-radius:2px">Find Out</button>
+          </div>
+        </form>
+
+        <hr/>
+
+        <P id="EMICapt"></P>
+        <script src='cemi.js'> </script>
+      </div>
+
+
+      <hr/>
+
+<div class="ans">
+      <br>
+      <strong>Frequently asked Question ?</strong><br><br><hr/>
+
+    <strong> What is Car Loan ?</strong><br>
+    <h1>
+      <ul>
+        <li>
+          A car loan is a fixed amount of money borrowed at a fixed rate and repaid over a fixed amount of time.
+</li>>
+
+</ul>
+</h1> <br/><hr/>
+
+    <strong>How is my Car Loan EMI calculated?</strong><br>
+    <h1>
+      <ul>
+        <li>
+          Your car loan EMI can be calculated with an online car loan calculator.</li> <br/>
+        <li>The EMI for the loan is calculated using the formula,</br>
+        
+        EMI = [P x R x (1+R)^N]/[(1+R)^N-1]</li><br/>
+        <li>
+        Where,<br/>
+        P = Principal loaned amount<br/>
+        R = Rate of Interest<br/>
+        N = Tenure (in months)<br/>
+</li>
+</ul>
+</h1>
+
+<hr/>
+    <strong>How to use an EMI calculator?</strong><br>
+<h1>
+    Follow this simple 3-step process to use the online personal loan EMI calculator:<br/><br/>
+        <ul>
+       <li> Enter the principal amount: Choose between the minimum and maximum principal amount and enter it in the calculator.</li><br/>
+       <li> Enter the intrest : Enter the rate of interest that you can afford against the loan. Banks assign a minimum interest rate against personal loans.</li><br/>
+        <li>Enter the tenure/ Month: Enter the Months by choosing between the minimum and maximum months to repay the loan </li><br/>
+        <li>Once you enter all the above mentioned figures, the personal loan calculator will compute the payable EMI amount.</li>
+        </ul>
+</h1><hr/>
+    </div>
+      </body>

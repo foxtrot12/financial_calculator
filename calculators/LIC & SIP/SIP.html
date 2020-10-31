@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <title>SIP calculator</title>
+  </head>
+  <body>
+<script src="./sip.js"></script>
+    <div class="container mt-5 p-5 bg-light shadow-sm rounded">
+        <div class="row">
+          <div class="col-sm">
+            <p class="text-center font-weight-bolder text-primary h3">SIP calculator</p>
+            <div class="input-group input-group-default">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Monthly Investment</span>
+                </div>
+                <input type="text" class="form-control" id="num1" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                <div class="input-group-append">
+                    <span class="input-group-text">&#x20B9;</span>
+                  </div>
+              </div><br>
+              <div class="input-group input-group-default">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Expected Return Rate</span>
+                </div>
+                <input type="text" class="form-control" id="num2" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                <div class="input-group-append">
+                    <span class="input-group-text">%</span>
+                  </div>
+              </div><br>
+              <div class="input-group input-group-default">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Time Period</span>
+                </div>
+                <input type="text" class="form-control" id="num3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                <div class="input-group-append">
+                    <span class="input-group-text">Years</span>
+                  </div>
+              </div><br>
+              <button onclick="calculate()" type="button" class="btn btn-outline-warning btn-lg btn-block">Check</button>
+          </div>
+          <div class="col-sm mt-3">
+              <p class="text-muted font-weight-bold h3 text-center" id="namees"><u></u></p><br>
+              <p class="font-weight-bold text-success h5" id="answer"></p>
+              <p class="font-weight-bold text-success h5" id="answer2"></p>
+              <p class="font-weight-bold text-success h5" id="answer3"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid bg-light mt-5 p-5">
+        <div class="row">
+          <div class="col-sm">
+            <div class="container text-muted font-weight-normal ">
+                <p class="text-danger h4 font-weight-bold"> What is SIP in mutual funds?</p>
+                    
+                <p>A systematic investment plan (SIP) is an investment method offered by mutual funds to investors, allowing them to invest in small amounts periodically instead of lump sums. The frequency of investment is usually weekly, monthly or quarterly.</p>
+                    
+                <p>Benefits of SIP</p>
+                    
+                    <p>You can start investing in a phased and disciplined manner and in smaller quantities</p>
+                    <p>Reduces the risks as we do not need to time the market. Averages out the ups and downs that happens in the invested instrument as we are investing periodically</p>
+                    <p>You will reap the benefit of compounding interest as you stay invested over a longer period of time</p>
+                    <p>Accumulated wealth will help in times of emergency or realising your dreams</p><br><br>
+
+                <p class="text-danger h4 font-weight-bold"><u>How do SIP calculators work?</u></p>
+
+                 <p>   A SIP plan calculator works on the following formula –</p>
+                    
+                  <p>  M = P × ({[1 + i]n – 1} / i) × (1 + i).</p>
+                    
+                  <p>In the above formula –</p>
+                    
+            </p>M is the amount you receive upon maturity.</p>
+            </p>P is the amount you invest at regular intervals.</p>
+            </p>n is the number of payments you have made.</p>
+            </p>i is the periodic rate of interest.</p>
+                    
+                   <p>Take for example you want to invest Rs. 1,000 per month for 12 months at a periodic rate of interest of 12%.</p>
+                    
+                   <p>then the monthly rate of return will be 12%/12 = 1/100=0.01</p>
+                    
+                  <p>Hence, [M = 1,000X ({[1 +0.01 ]^{12} - 1} / 0.01) x (1 + 0.01)]  </p>
+                    
+                  <p>which gives Rs 12,809 Rs approximately in a year.</p>
+                    
+                   <p>The rate of interest on a SIP will differ as per market conditions. It may increase or decrease, which will change the estimated returns.</p>
+            </div>
+          </div>
+      </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

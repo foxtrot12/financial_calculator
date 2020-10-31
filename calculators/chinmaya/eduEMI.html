@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <title>Educationa Loan EMI Calculator</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="eduEMI.js"></script>
+	<link rel="stylesheet" href="backbtn.css">
+</script>
+
+
+    <link href="eduEMI.css" rel="stylesheet">
+  </head>
+
+  <body>
+   
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto" >
+        <div class="inner">
+          <h3 class="masthead-brand" style="color: black">Fincal</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" style="color: black">Educational Loan EMI</a>
+
+          </nav>
+        </div>
+      </header>
+
+<br><br><br>
+		<div id=outer align="justify-content-center" ><p style="color: black">Educational Loan EMI Calculator <br></p>
+			<div id=cover><form><table class=main>
+		
+				<tr><td style="color: black">Loan Amount<td><input id=loan1>
+				<tr><td style="color: black">Repayment in months<td><input id=months1>
+				<tr><td style="color: black">Interest Rate<td><input id=rate1 onchange=emi();>
+				<tr><td style="color: black"><button type=reset>Reset</button><td><button type=button onclick='emi()'>Submit</button>
+				<tr><td style="color: black">EMI<td><input id=pay1>
+				<tr><td style="color: black">Interest payable<td><input id=tintt1>
+				<tr><td style="color: black">Total payable<td><input id=gt1>
+				</table>
+			</form></div>
+		</div>
+
+<br><br><br>
+      <footer class="mastfoot mt-auto">
+      	<h3 style="color: black">FAQ</h3>
+      	        <p style="color: black">What is the maximum amount of Education Loan can you avail for education in India?<br>
+The maximum education loan amount for higher education is Rs. 75 lakhs. The quantum of education loan depends on the case <br><br>
+
+What is the margin for Education Loans? <br>
+There is no margin for education loans upto Rs. 4 Lakhs. For loans above Rs. 4 Lakh, the margin for studies within India is 5% and for studies overseas is 15%. <br><br>
+
+What is the role of a guardian / parent in an education loan? <br>
+The parent(s) or guardian of the student would be treated as a co-applicant of the student loan. His or her role would be, necessarily, like the primary debtor. <br><br>
+
+What will be implications of REPO RATE for Customers? <br>
+New customer at REPO RATE : - All new floating rate loans and credit limits renewed with effect from October 01, 2019 will be linked to Repo rate.
+<br>
+Existing customer at MRR/BPLR/Base rate/MCLR: - Existing loans and credit limits linked to MRR/BPLR/Base rate/MCLR shall continue till repayment or renewal, as the case may be. Only if existing customers approach us and give request for switching from MRR/BPLR/Base rate/MCLR to REPO RATE then only it will be changed. Once transitioned to REPO RATE, the customer can’t switch back to the old benchmark rates. <br><br>
+
+How will be my loan priced? Or how my loan effective ROI will get calculated? <br>
+All floating rate loans will be linked to REPO RATE. The rate offered to you shall be the REPO RATE plus spread. It may be noted that the Repo rate would be reset every three months. <br>
+
+Further, the Bank is free to decide the spread over the Repo Rate. The spread may undergo a change during the tenure of the loan. <br><br>
+
+I have a loan on fixed rate, can I convert it from fixed to floating rate? <br>
+Yes, you can at mutually acceptable terms with the Bank. <br><br>
+</p>
+
+      </footer>
+    </div>
+
+
+
+  
+
+</body></html>

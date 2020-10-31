@@ -1,0 +1,45 @@
+<div id=outer>fixed Deposit Calculator<div id=cover>
+<form name=mvc><div id=tdr><table class=main><col class=w50><col class=w50><tr><td>Principal<td><input id=principal><tr><td>Interest Rate<td><input id=rate><tr><td>Interest Compounding<td><select id=ci><option value=12>Monthly<option value=4 selected>Quarterly<option value=2>Half-yearly<option value=1>Yearly</select><tr><td>Period (months)<td><input id=time><tr><td><button type=reset>Reset</button><td><button type=button onclick=maturity();>Submit</button><tr><td>Maturity Value<td><input id=mv></table></div></form>
+</div></div>
+<div class ="text-data">
+<h1>Frequently Asked Questions</h1>
+<hr>
+<h3>Fixed Deposit Calculator Online</h3>
+<p>A fixed deposit (FD) is a type of term investment offered by several banks and NBFCs. These deposits typically offer a higher rate of interest, subject to certain terms and conditions. The amount you deposit in an FD is locked for a predetermined period which can vary between 7 days and 10 years.
+The interest rate for FDs is fixed at the time of opening the deposit and independent of any fluctuations in the market. Some financial institutions even allow one to break their FDs prematurely on paying a certain penalty fee. An FD calculator can be used to determine the interest and the amount that it will accrue at the time of maturity.</p>
+<br><br>
+<h3>How can an FD calculator help you?</h3>
+<p>Calculating the maturity amount of an FD can be a complicated and time-consuming process. An online FD calculator enables one to figure it without breaking a sweat.
+<li>FD maturity calculations are complex involving multiple variables. An FD deposit calculator does all the hard work and gives you the accurate figures just at the click of a button.</li>
+<li>It helps you save a lot of time on these complex calculations.</li>
+<li>A fixed deposit return calculator enables you to compare the maturity amount and interest rates of FDs offered by different financial institutions. You can make an informed decision when you have all the figures at your disposal.</li></p>
+<br><br>
+<h3>Here’s the FD Calculation Formula:</h3>
+<p>A=P(1+r/n)^n*t
+Where
+<li>A is maturity amount</li>
+<li>P is principal amount</li>
+<li>r is rate of interest</li>
+<li>t is number of years</li>
+<li>n is compounded interest frequency</li>
+</p>
+
+
+
+
+
+</div>
+
+
+
+
+<style>#outer{width:90%;max-width:600px;background:honeydew;text-align:center;margin:0 auto;font-weight:500;}
+#cover{border:2px solid #111;padding:15px 0}
+.main{table-layout:fixed;width:94%;border:0;border-collapse:collapse;margin:0 auto;}
+.main td{padding:0 8px;vertical-align:middle;text-align:left;border:0;font:500 16px arial}
+.main input{width:100%;border:1px solid #ccc;margin:2px 0;padding:0 2%;height:22px;text-align:right;font-weight:400;font-size:14px;}
+.main select{width:100%;border:1px solid #ccc;margin:2px 0;background:#fff;height:22px;font-weight:400;font-size:14px;}.w50{width:50%}.main button{width:100%;font-weight:500;margin:3px 0;}</style>
+<script>function maturity(){var principal=document.getElementById('principal').value;var rate=document.getElementById('rate').value;var ci=document.getElementById('ci').value;var time=document.getElementById('time').value;var irate=rate/ci;var mv=document.getElementById('mv').value;
+document.getElementById('mv').value=(document.getElementById('principal').value*Math.pow((1 + irate/100),(time/12*ci))).toFixed(2);}
+// Widget Code by https://karvitt.com/widgets/
+</script>
